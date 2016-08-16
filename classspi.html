@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="mapsite.css">
+	<!-- <link rel="stylesheet" href="menubar.css"> -->
+			<style>
+			#map{
+				width: 100%;
+				height: 700px;
+			}
+    </style>
+    <title>
+    	Maxeen's Journey to Embark
+    </title>
+   </head>
+  <body>
+  	<style>
+  		ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:powderblue;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: fantasy;
+}
+
+li a:hover {
+    background-color:darkorchid;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="https://www.facebook.com/majay711">Homepage</a></li>
+  <li><a href="http://weheartit.com/Spellmankitty">We heart it</a></li>
+  <li><a href="https://www.instagram.com/freedom_of/">Instagram</a></li>
+  <li><a href="www.google.com">Google</a></li>
+</ul>
+  	</style>
+    <h1>The Places I Plan To Visit</h1>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+      	var myLating={lat:40.758035, lng:-73.984780}
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 33.724340, lng: -35.156250},
+            zoom: 3
+       
+        });
+		var marker= new google.maps.Marker({
+  			position: {lat: 40.619502, lng: -73.937638},
+  			map: map,
+  			title: 'HOME'
+  		});
+		var marker= new google.maps.Marker({
+  			position: {lat: -22.906847, lng: -43.172896},
+  			map: map,
+  			title: 'Rio de Janeiro, Brazil'
+  		});
+  		var marker= new google.maps.Marker({
+  			position: {lat: 41.902783, lng: 12.496366},
+  			map: map,
+  			title: 'Rome,Italy'
+  		});
+  		var marker= new google.maps.Marker({
+  			position:{lat: 36.204824 ,lng: 138.252924},
+  			map:map,
+  			title: 'Japan'
+  		});
+  		var marker= new google.maps.Marker({
+  			position:{lat:21.799715 ,lng: -72.168269},
+  			map:map,
+  			title: 'Grace Bay'
+  		});
+
+  }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+        // key=AIzaSyBNnkCvj0SFgYih3UTW3jFLKMNLaWLIXSA
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>
+    	My Travel Journal
+    </h2>
+<br>
+<br>
+<p>
+Since I was born I never been on vacation. I hardly been out of New York, well if you don't include class trips. But even if I did then that means I only been to Washington D.C., Pennslvania, New Jersey, and whatever state you pass by on the highway. So I dicided to map where I want to go. 
+</p>  
+<h1>Markers</h1>
+<br>
+<br>
+<br>
+<img src="http://sevennaturalwonders.org/wp-content/uploads/2009/01/brazil-iconic-statue-on-corcovado-mountain-in-rio-de-janeiro-hd-wallpaper-805x450.jpg" <text-align: center>>
+<br>
+<h2>1)Rio de Janerio</h2>
+<br>
+<br>
+<br>
+<img src="http://www.worldcelebrationblog.com/wp-content/uploads/2013/11/rome.jpg">
+<br>
+<h2>2)Rome,Italy</h2>
+<br>
+<br>
+<br>
+<img src="http://www.digitalmeetsculture.net/wp-content/uploads/2016/07/japan.jpg">
+<br>
+<h2>3)Japan</h2>
+<br>
+<br>
+<br>
+<img src="https://az821196.vo.msecnd.net/thing/grace-bay-beach-pr/forbes-point_540x360.jpg"> 
+<br>
+<h2>4)Grace Bay Beach</h2> 
+<br>
+<br>
+<br>
+<img src="http://feel-planet.com/wp-content/uploads/2015/05/Bahamas.jpg">
+<h2>Pink Sands Beach</h2> 
+
+</html>
+
+
